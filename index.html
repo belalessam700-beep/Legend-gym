@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legends Fitness & Gym</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .hero{position:relative;min-height:92vh;display:flex;align-items:center;background:radial-gradient(circle at 80% 20%, rgba(242,183,5,.14), transparent 55%), var(--black);padding:60px 24px 40px;overflow:hidden;}
+  .hero::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(135deg, rgba(255,255,255,.025) 0 2px, transparent 2px 26px);pointer-events:none;}
+  .hero-inner{max-width:1180px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:2;}
+  .hero h1{font-size:clamp(2.6rem, 6vw, 4.6rem);line-height:1.05;color:var(--off-white);}
+  .hero h1 .stroke{-webkit-text-stroke:2px var(--gold);color:transparent;}
+  .hero h1 .fill{color:var(--gold);}
+  .hero p.lead{margin-top:22px;font-size:1.08rem;color:var(--steel-light);max-width:520px;line-height:1.9;}
+  .hero-ctas{display:flex;gap:16px;margin-top:34px;flex-wrap:wrap;}
+  .hero-logo{position:relative;display:flex;justify-content:center;}
+  .hero-logo img{width:100%;max-width:400px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.6));}
+  @media(max-width:900px){
+    .hero-inner{grid-template-columns:1fr;text-align:center;}
+    .eyebrow{margin-inline:auto;}
+    .hero p.lead{margin-inline:auto;}
+    .hero-ctas{justify-content:center;}
+    .hero-logo{order:-1;margin-bottom:10px;}
+    .hero-badge-24{left:6%;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand">
+      <img src="logo.jpg" alt="Legends Fitness & Gym">
+      <span>LEGENDS <span class="accent">GYM</span></span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">☰</button>
+    <ul id="navMenu">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="hours.html">المواعيد</a></li>
+      <li><a href="subscription.html">الاشتراك</a></li>
+      <li><a href="trainers.html">الكباتن</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">LEGENDS FITNESS &amp; GYM</div>
+      <h1>مش بس جيم<br><span class="fill">إحنا</span> <span class="stroke">عيلة واحدة</span></h1>
+      <p class="lead">جيم رجالة مفتوح 24 ساعة، وكباتن موجودين على طول جنبك في كل خطوة. بلوك بنات بمواعيد مخصوصة، وحصص زومبا وفلكسيبيليتي كل أسبوع.</p>
+      <div class="hero-ctas">
+        <a href="hours.html" class="btn btn-gold">مواعيد الجيم</a>
+        <a href="trainers.html" class="btn btn-ghost">اتعرف على الكباتن</a>
+      </div>
+    </div>
+    <div class="hero-logo">
+      <img src="logo.jpg" alt="Legends Fitness & Gym Logo">
+      <div class="hero-badge-24"><strong>24</strong><small>ساعة رجالة</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="barbell"><div class="plate small"></div><div class="plate"></div><div class="bar"></div><div class="plate"></div><div class="plate small"></div></div>
+
+<section>
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="eyebrow">اتصفح الموقع</div>
+      <h2>كل اللي محتاجه <span>في صفحة واحدة</span></h2>
+      <p>اختار اللي عايزه: مواعيد، اشتراكك، أو تتعرف على فريق الكباتن.</p>
+    </div>
+
+    <div class="quick-grid">
+      <div class="quick-card">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 10.59V7a1 1 0 0 0-2 0v6a1 1 0 0 0 .29.71l4 4a1 1 0 0 0 1.42-1.42z"/></svg></div>
+        <h3>المواعيد</h3>
+        <p>جيم الرجالة مفتوح 24 ساعة، وجيم البنات بمواعيد وحصص أسبوعية.</p>
+        <a href="hours.html">اعرف المواعيد ←</a>
+      </div>
+      <div class="quick-card">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5-4v6a9 9 0 0 1-9 9 9 9 0 0 1-9-9V6a2 2 0 0 1 2-2h4l2-2 2 2h4a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>اشتراكك</h3>
+        <p>دخّل الكود أو رقمك واعرف كل تفاصيل اشتراكك في ثواني.</p>
+        <a href="subscription.html">اعرف تفاصيل اشتراكي ←</a>
+      </div>
+      <div class="quick-card">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+        <h3>الكباتن</h3>
+        <p>اتعرف على فريق التدريب وتابعهم على واتساب وانستجرام.</p>
+        <a href="trainers.html">شوف الكباتن ←</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="review-strip">
+      <div class="stars">★★★★★</div>
+      <h3>عجبك الجيم؟ قيّمنا على جوجل</h3>
+      <p>رأيك بيفرق معانا وبيساعد ناس تانية تعرف اختيارها صح.</p>
+      <a href="https://maps.app.goo.gl/e8D61CYg8jMHXvRM9" target="_blank" rel="noopener" class="btn btn-gold">قيّم الجيم دلوقتي</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">
+    <img src="logo.jpg" alt="Legends Fitness & Gym" style="width:44px;height:44px;border-radius:8px;">
+    <span>LEGENDS <span class="accent" style="color:var(--gold);">GYM</span></span>
+  </div>
+  <div class="foot-links">
+    <a href="hours.html">المواعيد</a>
+    <a href="subscription.html">الاشتراك</a>
+    <a href="trainers.html">الكباتن</a>
+  </div>
+  <div class="foot-social">
+    <a href="https://www.instagram.com/legends_fitness_gym?igsh=enVrbnNuZXY5YnFm" target="_blank" rel="noopener" aria-label="انستجرام Legends Gym" title="انستجرام"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.94.01 9.28 0 12 0zm0 5.35A6.65 6.65 0 1 0 12 18.65 6.65 6.65 0 0 0 12 5.35zm0 2.16A4.49 4.49 0 1 1 12 16.5 4.49 4.49 0 0 1 12 7.51zm6.9-2.36a1.55 1.55 0 1 1-3.1 0 1.55 1.55 0 0 1 3.1 0z"/></svg></a>
+    <a href="https://www.facebook.com/share/1EmZY1f5Y4/" target="_blank" rel="noopener" aria-label="فيسبوك Legends Gym" title="فيسبوك"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.87v-6.99H7.9V12h2.6V9.8c0-2.57 1.53-4 3.87-4 1.12 0 2.3.2 2.3.2v2.5h-1.3c-1.28 0-1.68.8-1.68 1.62V12h2.86l-.46 2.88h-2.4v6.99A10 10 0 0 0 22 12z"/></svg></a>
+    <a href="https://maps.app.goo.gl/e8D61CYg8jMHXvRM9" target="_blank" rel="noopener" aria-label="قيّمنا على جوجل ماب" title="قيّمنا على جوجل"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></a>
+  </div>
+  <p>© 2026 Legends Fitness &amp; Gym — جميع الحقوق محفوظة</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
